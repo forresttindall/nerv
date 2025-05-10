@@ -1,0 +1,35 @@
+/* Webkit (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(10, 10, 10);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(35, 35, 35);
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(45, 45, 45);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(35, 35, 35) rgb(20, 20, 20);
+}
+
+/* Ensure the html and body have the correct background */
+html, body {
+  background-color: rgb(10, 10, 10);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}

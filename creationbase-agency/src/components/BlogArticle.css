@@ -1,0 +1,134 @@
+body {
+    background: black;
+}
+
+.blog-article {
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 24px;
+    color: #909090;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.article-category {
+    font-family: "Kode Mono", monospace;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    
+}
+
+.article-date {
+    font-family: "Kode Mono", monospace;
+    font-size: 0.9rem;
+}
+
+.article-header h1 {
+    font-family: "PPNeueMachina-Inktrap", monospace;
+    font-size: 3rem;
+    color: #CACACA;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.article-featured-image {
+    margin: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-content {
+    font-family: "Kode Mono", monospace;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.article-content h2 {
+    font-family: "PPNeueMachina-Inktrap", monospace;
+    font-size: 2rem;
+    color: #CACACA;
+    margin: 40px 0 24px;
+}
+
+.article-content h3 {
+    font-family: "PPNeueMachina-Inktrap", monospace;
+    font-size: 1.8rem;
+    color: #CACACA;
+    margin: 32px 0 20px;
+}
+
+.article-content p {
+    margin-bottom: 24px;
+}
+
+.article-content ul {
+    margin-bottom: 24px;
+    padding-left: 24px;
+    list-style-type: none;
+}
+
+.article-content li {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.article-content li::before {
+    content: "→";
+    position: absolute;
+    left: -24px;
+    color: #3f74ff;
+}
+
+.article-tags {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.article-tag {
+    font-family: "Kode Mono", monospace;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .blog-article {
+        margin: 80px auto;
+        padding: 20px;
+    }
+
+    .article-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .article-content h2 {
+        font-size: 2rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.5rem;
+    }
+} 

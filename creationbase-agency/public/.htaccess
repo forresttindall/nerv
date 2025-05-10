@@ -1,0 +1,10 @@
+# Redirect blog article requests to appropriate HTML files
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/blog/([^/]+)$
+RewriteCond %{REQUEST_URI} !\.html$
+RewriteRule ^blog/(.*)$ /blog/$1.html [L]
+
+# All other routes go to index.html for React router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L] 

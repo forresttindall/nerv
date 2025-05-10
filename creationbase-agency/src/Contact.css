@@ -1,0 +1,163 @@
+.contact-container {
+  min-height: 100vh;
+  background: black;
+  color: #909090;
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-eyebrow {
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #909090;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.contact-title {
+  font-family: "PPNeueMachina-Inktrap", monospace;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #CACACA;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-family: "Kode Mono", monospace;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Make these elements span full width */
+.contact-form input[name="subject"],
+.contact-form textarea,
+.contact-form .submit-button,
+.contact-form .status-message {
+  grid-column: 1 / -1;
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  background: rgba(35, 35, 35, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #CACACA;
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 40px rgba(229, 83, 128, 0.3);
+    background-image: linear-gradient(rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.9)), 
+                      linear-gradient(45deg, #f09433 0%, #e6683c 20%, #dc2743 40%, #cc2366 60%, #bc1888 80%, #7b3fff 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem 2rem;
+  background: rgba(35, 35, 35, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #909090;
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.submit-button:hover {
+  scale: 1.05;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 40px rgba(229, 83, 128, 0.5);
+  cursor: pointer;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.9)), 
+                    linear-gradient(45deg, #f09433 0%, #e6683c 20%, #dc2743 40%, #cc2366 60%, #bc1888 80%, #7b3fff 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button-arrow {
+  transition: transform 0.3s ease;
+}
+
+.submit-button:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+.status-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Kode Mono", monospace;
+}
+
+.status-message.success {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  color: #90EE90;
+}
+
+.status-message.error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  color: #FF6B6B;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+  
+  .contact-description {
+    font-size: 1.1rem;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

@@ -1,0 +1,229 @@
+.testimonials-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: black;
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+.testimonials-eyebrow {
+    font-family: "Kode Mono", monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #909090;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.testimonials-title {
+    font-family: "PPNeueMachina-Inktrap", monospace;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    color: #CACACA;
+}
+
+.testimonialscontainer {
+    gap: 40px;
+    row-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.fulllegth {
+    height: 100%;
+}
+
+.eachdiv {
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    border-radius: 0.4rem;
+    color: #909090;
+}
+
+.div1 {
+    height: 100%;
+    background: rgba(35, 35, 35, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.div2 {
+    height: 100%;
+    background: rgba(35, 35, 35, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #909090;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.div4 {
+    height: 100%;
+    background: rgba(35, 35, 35, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #909090;
+}
+
+.div5 {
+    height: 100%;
+    background: rgba(35, 35, 35, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #909090;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.userdetails {
+    display: flex;
+}
+
+.imgbox {
+    margin-right: 1rem;
+}
+
+.imgbox img {
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.detbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detbox p {
+    margin: 0;
+}
+
+.detbox .name {
+    color: #CACACA;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+    font-family: "Kode Mono", monospace;
+}
+
+.detbox .name.dark {
+    color: #CACACA;
+}
+
+.review h4 {
+    font-size: 1rem;
+    color: #CACACA;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    font-family: "PPNeueMachina-Inktrap", monospace;
+}
+
+.review.dark h4 {
+    color: #CACACA;
+}
+
+.review p {
+    font-size: 0.80rem;
+    color: #909090;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Kode Mono", monospace;
+}
+
+.review.dark p {
+    color: #909090;
+}
+
+/* Gradient class for testimonial highlights */
+.gradient {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 20%, #dc2743 40%, #cc2366 60%, #bc1888 80%, #7b3fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 800px) {
+    .testimonials-section {
+        padding: 100px 20px;
+    }
+
+    .testimonials-title {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    
+    .testimonials-content {
+        text-align: left;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+        gap: 40px;
+    }
+
+    .row2 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .review p {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .testimonialscontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonials-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .testimonials-section {
+        padding: 100px 20px;
+    }
+} 

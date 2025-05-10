@@ -1,0 +1,114 @@
+.about-container {
+  min-height: auto;
+  background: black;
+  color: #909090;
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-eyebrow {
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #909090;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-family: "PPNeueMachina-Inktrap", monospace;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  color: #CACACA;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  font-family: "Kode Mono", monospace;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.about-card {
+  background: rgba(35, 35, 35, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-card p {
+  font-family: "Kode Mono", monospace;
+  
+  margin-bottom: 1rem;
+  color: #909090;
+}
+
+.card-title {
+  font-family: "PPNeueMachina-Inktrap", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #CACACA;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 20%, #dc2743 40%, #cc2366 60%, #bc1888 80%, #7b3fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 12px;
+}
+
+.card-icon:hover {
+  filter: drop-shadow(0 0 5px rgba(220, 39, 67, 0.5));
+}
+
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.card-icon svg path,
+.card-icon svg line,
+.card-icon svg polyline,
+.card-icon svg rect,
+.card-icon svg circle {
+  stroke: url(#gradient);
+  stroke-width: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+  }
+}
