@@ -1,0 +1,25 @@
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual domain)
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent overwhelming your server)
+Crawl-delay: 1
+
+# Disallow admin/private areas (uncomment and modify as needed)
+# Disallow: /admin/
+# Disallow: /api/
+# Disallow: /private/
+# Disallow: /*.json$
+
+# Allow common crawlers full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

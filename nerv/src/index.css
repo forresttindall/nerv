@@ -1,0 +1,158 @@
+/* Import Google Font (Inter for sleekness) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* CSS Variables for a clean theme */
+:root {
+  --bg-color: #121212; /* Very dark background */
+  --card-bg-color: #1c1c1c; /* Slightly lighter card background */
+  --text-color: #e0e0e0; /* Light text */
+  --subtle-text-color: #888888; /* Greyer text for less important info */
+  --highlight-color: #007bff; /* A clean blue highlight */
+  --border-color: #333333; /* Subtle border for cards */
+  --shadow-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Global Resets & Body Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 16px; /* Base font size */
+}
+
+/* --- Scrollbar Styles (minimalist) --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--subtle-text-color);
+}
+
+/* --- Main Layout --- */
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  padding: 2rem;
+  max-width: 450px; /* More compact */
+  width: 100%;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Spacing between header, body, footer */
+}
+
+/* --- Header --- */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 80px; /* Adjust logo size */
+  height: auto;
+}
+
+.title {
+  font-size: 2.5rem; /* Larger, prominent title */
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--subtle-text-color);
+  margin: 0;
+}
+
+/* --- Main Content --- */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color); /* Separator */
+}
+
+.description strong {
+  color: var(--highlight-color); /* Highlight keywords */
+}
+
+/* --- Footer --- */
+.card-footer {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color); /* Separator */
+}
+
+.built-by {
+  font-size: 1rem;
+  color: var(--subtle-text-color);
+  margin: 0;
+}
+
+.creationbase-link {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 20%, #dc2743 40%, #cc2366 60%, #bc1888 80%, #7b3fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: gradientShift 8s ease infinite;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.creationbase-link:hover {
+  text-shadow: 0 5px 40px rgba(229, 83, 128, 0.8);
+
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

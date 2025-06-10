@@ -1,0 +1,45 @@
+# LLMs.txt - Guidelines for AI/LLM crawlers
+# Learn more at https://llms.txt
+
+# This site allows AI training on publicly available content
+# with the following guidelines:
+
+User-agent: *
+Allow: /
+
+# Preferred usage guidelines:
+# - Respect robots.txt directives
+# - Use reasonable crawl rates
+# - Don't crawl user-generated private content
+# - Respect copyright and licensing
+
+# Content licensing:
+# Public pages: Available for AI training
+# API endpoints: Check individual endpoint documentation
+# User content: Requires explicit permission
+
+# Contact information:
+# For questions about AI training usage: forrest@creationbase.io
+# For data removal requests: forrest@creationbase.io
+
+# Last updated: 2024-01-01
+# Policy version: 1.0
+
+# Specific AI crawler preferences:
+User-agent: OpenAI-GPT
+Allow: /
+Crawl-delay: 2
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
+
+User-agent: Bard
+Allow: /
+Crawl-delay: 2
+
+# Disallow sensitive areas from AI training:
+# Disallow: /admin/
+# Disallow: /user-profiles/
+# Disallow: /private/
+# Disallow: /api/auth/
