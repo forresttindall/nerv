@@ -1,7 +1,7 @@
 # NERV Stack
 
 <p align="center">
-  <img src="public/images/dot-triangle.png" alt="NERV Stack Logo" width="100"/>
+  <img src="assets/dot-triangle.png" alt="Creationbase logo" width="100"/>
 </p>
 
 <p align="center">
@@ -44,8 +44,8 @@ Ensure you have the following installed on your machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-nerv-repo.git](https://github.com/your-username/your-nerv-repo.git) # Replace with your actual repo URL
-    cd your-nerv-repo # Or your project directory name, e.g., nerv
+    git clone [https://github.com/forresttindall/nerv.git](https://github.com/forresttindall/nerv.git) 
+    cd nerv
     ```
 
 2.  **Install dependencies:**
