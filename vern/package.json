@@ -1,0 +1,62 @@
+{
+  "name": "vern",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "VERN Stack - Vite + Express + React + Node.js template",
+  "main": "Main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite preview --port $PORT --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix",
+    "clean": "rimraf dist",
+    "deploy:vercel": "npm run build && vercel --prod",
+    "deploy:github": "npm run build && gh-pages -d dist",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "vern",
+    "vite",
+    "react",
+    "nodejs",
+    "express",
+    "serverless",
+    "vercel",
+    "template"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.3",
+    "vite": "^4.4.5",
+    "@types/node": "^20.4.5",
+    "typescript": "^5.0.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "rimraf": "^5.0.1",
+    "gh-pages": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forresttindall/vern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forresttindall/vern/issues"
+  },
+  "homepage": "https://github.com/forresttindall/vern#readme"
+}
